@@ -268,3 +268,4 @@ details p { color: var(--muted); padding-bottom: 18px; max-width: 62ch; }
 .platforms { color: var(--muted); font-size: 0.95rem; margin-top: -6px; }
 .platforms strong { color: var(--fg); font-weight: 600; }
 .dock-text span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 380px) { .dock img { display: none; } }
