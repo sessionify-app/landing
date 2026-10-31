@@ -265,3 +265,6 @@ details p { color: var(--muted); padding-bottom: 18px; max-width: 62ch; }
   body.hero-in-view .dock { transform: translateY(110%); }
 }
 @media (prefers-reduced-motion: reduce) { .dock { transition: none; } }
+.platforms { color: var(--muted); font-size: 0.95rem; margin-top: -6px; }
+.platforms strong { color: var(--fg); font-weight: 600; }
+.dock-text span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
