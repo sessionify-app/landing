@@ -15,7 +15,7 @@ that meant:
 - **Unreadable text** — the captions inside the pictures shrank to a few pixels.
 - **On a phone, worse** — scrolling down reached a poster card with a headline in it, and the
   "Sessionify · Get" bar along the bottom covered it.
-- The old iPad image's status bar also still said "SessionFlow", the app's former name.
+- The old iPad image's status bar also still said "SessionFlow", the app's former name. (Since fixed: the iPad screenshots in `screenshots/` now read "Sessionify".)
 
 **The fix:** show the app itself, in device frames, with **no caption and no panel, on a transparent
 background**, so the page's own dark gradient shows around the devices and the page headline does all
