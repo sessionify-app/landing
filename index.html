@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Sessionify</title>
+<title>Sessionify: Offline Meeting Recorder for In-Person Meetings</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="The offline meeting recorder for in-person meetings. Record the room, snap the whiteboard, mark up the handout, then play it all back in sync. Transcribed on your device. iPhone, iPad and Mac.">
 <meta name="theme-color" content="#0A0D1F">
@@ -11,12 +11,169 @@
 <meta property="og:title" content="Sessionify: the offline recorder for in-person meetings">
 <meta property="og:description" content="Record the room, snap the whiteboard, mark up the handout, then play it all back in sync. Works offline. Nothing leaves your device.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://sessionify-app.github.io/landing/">
+<meta property="og:site_name" content="Sessionify">
 <meta property="og:image" content="https://sessionify-app.github.io/landing/assets/screenshots/web/mac-01-timeline.jpg">
+<meta property="og:image:alt" content="Sessionify on Mac: a meeting's audio, photos and notes on one timeline">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sessionify-app.github.io/landing/">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
 <link rel="icon" href="assets/logo/sessionify-mark.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/logo/sessionify-mark.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/app-icon/icon-ios-1024.png">
 <link rel="stylesheet" href="style.css?v=2">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Sessionify",
+ "url": "https://sessionify-app.github.io/landing/",
+ "downloadUrl": "https://apps.apple.com/us/app/sessionify/id6821321012",
+ "applicationCategory": "BusinessApplication",
+ "applicationSubCategory": "Meeting recorder",
+ "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
+ "description": "Offline recorder for in-person meetings. Record the room, snap the whiteboard, mark up the handout, then play audio, photos, notes and PDFs back in sync. Transcribed on your device.",
+ "image": "https://sessionify-app.github.io/landing/assets/app-icon/icon-ios-1024.png",
+ "screenshot": [
+  "https://sessionify-app.github.io/landing/assets/screenshots/web/mac-01-timeline.jpg",
+  "https://sessionify-app.github.io/landing/assets/screenshots/web/iphone-01-timeline.jpg",
+  "https://sessionify-app.github.io/landing/assets/screenshots/web/ipad-01-timeline.jpg"
+ ],
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "Sessionify Pro monthly",
+   "price": "7.99",
+   "priceCurrency": "USD",
+   "url": "https://apps.apple.com/us/app/sessionify/id6821321012"
+  },
+  {
+   "@type": "Offer",
+   "name": "Sessionify Pro yearly",
+   "price": "59.99",
+   "priceCurrency": "USD",
+   "url": "https://apps.apple.com/us/app/sessionify/id6821321012"
+  },
+  {
+   "@type": "Offer",
+   "name": "Free (open and play sessions)",
+   "price": "0",
+   "priceCurrency": "USD",
+   "url": "https://apps.apple.com/us/app/sessionify/id6821321012"
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "Sessionify",
+  "email": "sessionify.support@gmail.com",
+  "logo": "https://sessionify-app.github.io/landing/assets/logo/sessionify-mark.png"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Does it work without internet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Recording and transcription need no connection, so it works in basements, on site and on planes. iCloud sync catches up when you are back online."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it record Zoom or Teams calls?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sessionify is built for meetings in a physical room. It records what your device's microphone hears and doesn't join video calls."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is my audio uploaded anywhere?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Recording, transcription and speaker identification run on your device. We never see your audio, photos, notes or transcripts."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What happens when my trial ends?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "You can still open and play sessions. Recording, capturing and editing need Pro."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does one subscription cover all my devices?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Pro unlocks iPhone, iPad and Mac."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can someone watch a session I share without paying?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Opening and playing a session is free."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Where are my sessions stored?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "As ordinary files in your own iCloud Drive, visible in the Files app and backed up with your device."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I take my data with me?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Audio, photos, clips and PDFs export as normal files."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it record video?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It records audio throughout. You add photos and short clips at the moments that matter."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is there an AI summary?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not built in. Sessionify gives you a full transcript made on your device, and nothing is sent to the cloud. If you want a summary and your device supports Apple Intelligence, it can write one from the transcript, also on device."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it work with PowerPoint or Keynote?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not yet. PDFs, photos and notes are supported."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Android or Windows?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not today."
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 

@@ -1,0 +1,34 @@
+# Tells IndexNow search engines (Bing, Yandex, Seznam, Naver, Yep and others)
+# that the pages in sitemap.xml changed. Runs after each push to main, once
+# GitHub Pages has had time to deploy, and can be run by hand from Actions.
+name: Notify search engines
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wait for GitHub Pages to deploy
+        if: github.event_name == 'push'
+        run: sleep 120
+
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          set -euo pipefail
+          KEY=$(tr -d '[:space:]' < .indexnow-key)
+          BASE="https://sessionify-app.github.io/landing/"
+          URLS=$(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<loc>\(.*\)<\/loc>/"\1"/' | paste -sd, -)
+          BODY="{\"host\":\"sessionify-app.github.io\",\"key\":\"$KEY\",\"keyLocation\":\"${BASE}${KEY}.txt\",\"urlList\":[$URLS]}"
+          echo "$BODY"
+          curl -sS --fail-with-body -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" -d "$BODY" \
+            -w "\nHTTP %{http_code}\n"
