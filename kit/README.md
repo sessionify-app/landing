@@ -8,8 +8,8 @@ no source code, keys or internal details live here, so this repo is safe to publ
 2. `BRAND.md` — colours, type, tone, logo usage
 3. `COPY.md` — ready-to-use headlines, section copy, CTAs
 4. `FAQ.md` — questions visitors ask
-5. `assets/screenshots/README.md` — what each screenshot is
-6. `assets/` — logo SVGs/PNG, app icons, `screenshots/` (iPhone, iPad, Mac; `web/` = optimised JPEGs)
+5. `../assets/screenshots/README.md` — what each screenshot is
+6. `../assets/` — logo SVGs/PNG, app icons, `screenshots/` (iPhone, iPad, Mac; `web/` = optimised JPEGs)
 
 ## Status and rules for whoever builds the page
 - **The app is live on the App Store** (iPhone, iPad and Mac, one purchase of Pro covers all):
@@ -18,7 +18,8 @@ no source code, keys or internal details live here, so this repo is safe to publ
 - Screenshots are real App Store marketing images in `assets/screenshots/` (fictional demo data and stock photos;
   safe to publish). Use `web/*.jpg` on the page, originals for press/social.
 - Never use the word "lecture" or "slides" in copy (see BRAND.md). Don't promise Android/Windows.
-- Existing pages: support https://tianenchong.github.io/sessionify/ and privacy
-  https://tianenchong.github.io/sessionify/privacy.html — link the privacy page from the footer.
+- Site pages: landing https://sessionify-app.github.io/landing/, support
+  https://sessionify-app.github.io/landing/support/ and privacy
+  https://sessionify-app.github.io/landing/privacy.html — link the privacy page from the footer.
 - Support email: sessionify.support@gmail.com
 - Tech stack for the page is the builder's choice; a single static page (plain HTML/CSS) deploys to GitHub Pages as-is.
