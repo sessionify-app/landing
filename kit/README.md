@@ -12,7 +12,7 @@ no source code, keys or internal details live here, so this repo is safe to publ
 6. `../assets/` — logo SVGs/PNG, app icons, `screenshots/` (iPhone, iPad, Mac; `web/` = optimised JPEGs)
 
 ## Status and rules for whoever builds the page
-- **The app is live on the App Store** (iPhone, iPad and Mac, one purchase of Pro covers all):
+- **The app is live on the App Store for iPhone and iPad** (one purchase of Pro covers both; the Mac app is in review, so say "coming soon" with no date):
   https://apps.apple.com/us/app/sessionify/id6821321012 — use this for every download button and the official
   "Download on the App Store" badge (get the badge from Apple's marketing resources; don't redraw it).
 - Screenshots are real App Store marketing images in `assets/screenshots/` (fictional demo data and stock photos;
