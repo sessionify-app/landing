@@ -22,7 +22,7 @@
 <link rel="icon" href="assets/logo/sessionify-mark.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/logo/sessionify-mark.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/app-icon/icon-ios-1024.png">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -38,7 +38,7 @@
  "screenshot": [
   "https://sessionify-app.github.io/landing/assets/screenshots/web/mac-01-timeline.jpg",
   "https://sessionify-app.github.io/landing/assets/screenshots/web/iphone-01-timeline.jpg",
-  "https://sessionify-app.github.io/landing/assets/screenshots/web/ipad-01-timeline.jpg"
+  "https://sessionify-app.github.io/landing/assets/screenshots/web/ipad-02-meeting.jpg"
  ],
  "offers": [
   {
@@ -222,8 +222,8 @@
         </ul>
       </div>
       <div class="hero-media">
-        <img class="hero-mac hero-pad" fetchpriority="high" src="assets/screenshots/web/ipad-01-timeline.jpg" alt="Sessionify on iPad: a session's audio, photos and notes on one timeline" width="1200" height="1600">
-        <img class="hero-phone" src="assets/screenshots/web/iphone-01-timeline.jpg" alt="Sessionify on iPhone: the same session on a phone" width="644" height="1400">
+        <img class="hero-pad" fetchpriority="high" src="assets/hero/web/ipad-hero-dark-web.webp" alt="Sessionify on iPad: a whiteboard photo, the live transcript and the session timeline in sync" width="1200" height="1567">
+        <img class="hero-phone" src="assets/hero/web/iphone-hero-dark-web.webp" alt="Sessionify on iPhone at the same moment of the session" width="600" height="1243">
       </div>
     </div>
   </section>
@@ -349,13 +349,13 @@
       <p class="tour-sub" id="tour-sub">iPhone for roving capture: record, snap and jot without breaking the conversation.</p>
 
       <div class="strip strip-phone" role="tabpanel" id="panel-iphone" aria-labelledby="tab-iphone" tabindex="0">
+        <img src="assets/screenshots/web/iphone-01-timeline.jpg" alt="Session timeline on iPhone" width="644" height="1400" loading="lazy">
         <img src="assets/screenshots/web/iphone-03-notes.jpg" alt="Notes in a session on iPhone" width="644" height="1400" loading="lazy">
         <img src="assets/screenshots/web/iphone-06-editing.jpg" alt="Editing a session on iPhone" width="644" height="1400" loading="lazy">
         <img src="assets/screenshots/web/iphone-08-theatre.jpg" alt="Theatre playback on iPhone" width="644" height="1400" loading="lazy">
         <img src="assets/screenshots/web/iphone-09-library.jpg" alt="Session library on iPhone" width="644" height="1400" loading="lazy">
       </div>
       <div class="strip strip-pad" role="tabpanel" id="panel-ipad" aria-labelledby="tab-ipad" tabindex="0" hidden>
-        <img src="assets/screenshots/web/ipad-01-timeline.jpg" alt="Session timeline on iPad" width="1200" height="1600" loading="lazy">
         <img src="assets/screenshots/web/ipad-02-meeting.jpg" alt="A meeting session on iPad" width="1200" height="1600" loading="lazy">
         <img src="assets/screenshots/web/ipad-03-editing.jpg" alt="Apple Pencil markup on iPad" width="1200" height="1600" loading="lazy">
         <img src="assets/screenshots/web/ipad-04-notes.jpg" alt="Notes on iPad" width="1200" height="1600" loading="lazy">
@@ -365,6 +365,7 @@
       </div>
       <div class="strip strip-mac" role="tabpanel" id="panel-mac" aria-labelledby="tab-mac" tabindex="0" hidden>
         <div class="soon-card"><img src="assets/app-icon/icon-mac-512.png" alt="Sessionify app icon for Mac" width="88" height="88" loading="lazy"><strong>Sessionify for Mac</strong><span>Coming soon to the App Store. Your Pro subscription will cover it.</span></div>
+        <img class="mac-window" src="assets/hero/web/mac-hero-dark-web.webp" alt="Sessionify for Mac: whiteboard photo and session timeline in one window" width="1600" height="1046" loading="lazy">
         <img src="assets/screenshots/web/mac-02-pdfs.jpg" alt="PDFs on Mac" width="1600" height="1000" loading="lazy">
         <img src="assets/screenshots/web/mac-03-markup.jpg" alt="Markup on Mac" width="1600" height="1000" loading="lazy">
         <img src="assets/screenshots/web/mac-04-theatre.jpg" alt="Theatre playback on Mac" width="1600" height="1000" loading="lazy">
@@ -503,6 +504,12 @@
       html += '<i style="height:' + Math.max(10, h) + '%"></i>';
     }
     w.innerHTML = html;
+  }
+  var hero = document.querySelector('.hero');
+  if (hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) {
+      document.body.classList.toggle('hero-in-view', e[0].isIntersecting);
+    }).observe(hero);
   }
   var subs = {
     iphone: 'iPhone for roving capture: record, snap and jot without breaking the conversation.',
