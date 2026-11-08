@@ -520,6 +520,7 @@
   var ua = navigator.userAgent;
   var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   var isMac = /Macintosh/.test(ua) && !isIOS;
+  var isIPad = isIOS && !/iPhone|iPod/.test(ua);
   if (isIOS) document.querySelectorAll('.badge-mac').forEach(function (el) { el.hidden = true; });
   if (isMac) {
     document.querySelectorAll('.badge-ios').forEach(function (el) { el.hidden = true; });
@@ -556,6 +557,8 @@
       select(next); next.focus();
     });
   });
+  var mine = isIPad ? 'ipad' : isIOS ? 'iphone' : isMac ? 'mac' : null;
+  if (mine) select(document.getElementById('tab-' + mine));
 })();
 </script>
 </body>
