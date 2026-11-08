@@ -24,15 +24,15 @@ and often not allowed — so Sessionify records audio and lets you capture just 
 ## Pricing
 - Viewing and playing sessions: **free**.
 - **Sessionify Pro: $7.99/month or $59.99/year (about 37% off)**, both with a **1-month free trial**.
-- Recording, capturing, editing and transcription need Pro. One subscription covers iPhone and iPad, and will cover the Mac app when it launches.
+- Recording, capturing, editing and transcription need Pro. One subscription covers iPhone, iPad and Mac.
 - Family Sharing is off at launch. Not sold in mainland China.
 - Positioning: a new category — part meeting recorder, part note app. Above note apps, well below AI meeting tools, because nothing is sent to the cloud.
 
 ## Availability
-Live on the App Store for iPhone and iPad: https://apps.apple.com/us/app/sessionify/id6821321012. The Mac app is in App Store review; say "coming soon" and give no date.
+Live on the App Store for iPhone, iPad and Mac: https://apps.apple.com/us/app/sessionify/id6821321012.
 
 ## Platforms
-iPhone and iPad (iOS/iPadOS 17+) now; Mac (macOS 14+) coming soon. iPhone = roving capture; iPad = Pencil markup; Mac = wide-timeline review.
+iPhone, iPad and Mac (iOS/iPadOS 17+, macOS 14+). iPhone = roving capture; iPad = Pencil markup; Mac = wide-timeline review.
 Android/Windows: possible future direction only — no dates, don't promise.
 
 ## Differentiators

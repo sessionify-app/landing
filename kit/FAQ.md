@@ -18,6 +18,6 @@
 
 **Does it work with PowerPoint or Keynote?** Not yet. PDFs, photos and notes are supported.
 
-**Which devices?** iPhone and iPad (iOS/iPadOS 17+). The Mac app (macOS 14+) is coming soon, and one subscription will cover all three.
+**Which devices?** iPhone and iPad (iOS/iPadOS 17+) and Mac (macOS 14+). One subscription covers all three.
 
 **Android or Windows?** Not today.
