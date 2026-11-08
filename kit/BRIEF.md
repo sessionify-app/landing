@@ -29,7 +29,7 @@ and often not allowed — so Sessionify records audio and lets you capture just 
 - Positioning: a new category — part meeting recorder, part note app. Above note apps, well below AI meeting tools, because nothing is sent to the cloud.
 
 ## Availability
-Live on the App Store for iPhone, iPad and Mac: https://apps.apple.com/us/app/sessionify/id6821321012.
+Live on the App Store for iPhone, iPad and Mac: https://apps.apple.com/app/sessionify/id6821321012.
 
 ## Platforms
 iPhone, iPad and Mac (iOS/iPadOS 17+, macOS 14+). iPhone = roving capture; iPad = Pencil markup; Mac = wide-timeline review.

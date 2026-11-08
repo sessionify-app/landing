@@ -13,7 +13,7 @@ no source code, keys or internal details live here, so this repo is safe to publ
 
 ## Status and rules for whoever builds the page
 - **The app is live on the App Store for iPhone, iPad and Mac** (one purchase of Pro covers all three):
-  https://apps.apple.com/us/app/sessionify/id6821321012 — use this for every download button and the official
+  https://apps.apple.com/app/sessionify/id6821321012 — use this for every download button and the official This link has no country code, so Apple opens each visitor's own App Store (US, SG and so on); keep it that way.
   "Download on the App Store" badge (get the badge from Apple's marketing resources; don't redraw it).
 - Screenshots are real App Store marketing images in `assets/screenshots/` (fictional demo data and stock photos;
   safe to publish). Use `web/*.jpg` on the page, originals for press/social.

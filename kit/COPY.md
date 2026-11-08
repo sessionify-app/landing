@@ -3,7 +3,7 @@
 ## Hero
 **Headline:** Your recording, finally in sync with your photos.
 **Sub:** Record the room, snap the whiteboard, mark up the handout — then play it all back together. Tap any photo to hear exactly what was being said.
-**CTA:** Download on the App Store → https://apps.apple.com/us/app/sessionify/id6821321012 — for iPhone, iPad and Mac. Free to open and play sessions; 1-month free trial of Pro.
+**CTA:** Download on the App Store → https://apps.apple.com/app/sessionify/id6821321012 — for iPhone, iPad and Mac. Free to open and play sessions; 1-month free trial of Pro.
 
 ## Problem strip
 Your recording doesn't know which photo it's talking about. Your photos don't know where in the recording they belong. Sessionify fixes that.
