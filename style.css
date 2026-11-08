@@ -278,3 +278,4 @@ details p { color: var(--muted); padding-bottom: 18px; max-width: 62ch; }
 .privacy .privacy-label .pl-kicker { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
 .privacy .privacy-label .pl-title { color: var(--fg); font-family: var(--display); font-size: 1.15rem; font-weight: 700; }
 .privacy .privacy-label .pl-body { color: var(--muted); }
+@media (max-width: 420px) { .badge-lg img { height: 46px; } .cta-row { gap: 10px; } }
