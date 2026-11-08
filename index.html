@@ -212,8 +212,8 @@
         <p class="display">For meetings that happen <span class="grad">in a room</span>, not on a call.</p>
         <p class="lede">Record the conversation, snap the whiteboard, mark up the handout, and play it all back in sync. Tap any photo to hear exactly what was being said. It all works offline, on your device.</p>
         <div class="cta-row">
-          <a class="badge badge-lg" href="https://apps.apple.com/app/sessionify/id6821321012" rel="noopener"><img src="assets/badge/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50"></a>
-          <a class="badge badge-lg" href="https://apps.apple.com/app/sessionify/id6821321012?platform=mac" rel="noopener"><img src="assets/badge/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" width="195" height="50"></a>
+          <a class="badge badge-lg badge-ios" href="https://apps.apple.com/app/sessionify/id6821321012" rel="noopener"><img src="assets/badge/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50"></a>
+          <a class="badge badge-lg badge-mac" href="https://apps.apple.com/app/sessionify/id6821321012?platform=mac" rel="noopener"><img src="assets/badge/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" width="195" height="50"></a>
         </div>
         <p class="platforms">Free for <strong>iPhone, iPad and Mac</strong>, with a 1-month free trial of Pro.</p>
         <ul class="trust">
@@ -473,8 +473,8 @@
       <h2>Keep what the room said, and what it showed.</h2>
       <p class="final-sub">The offline recorder for in-person meetings. Start your free month on iPhone, iPad or Mac.</p>
       <div class="cta-row center">
-        <a class="badge badge-lg" href="https://apps.apple.com/app/sessionify/id6821321012" rel="noopener"><img src="assets/badge/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50"></a>
-          <a class="badge badge-lg" href="https://apps.apple.com/app/sessionify/id6821321012?platform=mac" rel="noopener"><img src="assets/badge/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" width="195" height="50"></a>
+        <a class="badge badge-lg badge-ios" href="https://apps.apple.com/app/sessionify/id6821321012" rel="noopener"><img src="assets/badge/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50"></a>
+          <a class="badge badge-lg badge-mac" href="https://apps.apple.com/app/sessionify/id6821321012?platform=mac" rel="noopener"><img src="assets/badge/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" width="195" height="50"></a>
       </div>
     </div>
   </section>
@@ -513,6 +513,19 @@
       html += '<i style="height:' + Math.max(10, h) + '%"></i>';
     }
     w.innerHTML = html;
+  }
+  // Show the App Store badge on iPhone/iPad, the Mac App Store badge on a Mac,
+  // and both anywhere else. iPadOS Safari reports itself as a Mac, so a Mac
+  // with a touchscreen is treated as an iPad.
+  var ua = navigator.userAgent;
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isMac = /Macintosh/.test(ua) && !isIOS;
+  if (isIOS) document.querySelectorAll('.badge-mac').forEach(function (el) { el.hidden = true; });
+  if (isMac) {
+    document.querySelectorAll('.badge-ios').forEach(function (el) { el.hidden = true; });
+    document.querySelectorAll('a[href^="https://apps.apple.com/app/sessionify/id6821321012"]').forEach(function (el) {
+      if (el.href.indexOf('platform=mac') < 0) el.href += (el.href.indexOf('?') < 0 ? '?' : '&') + 'platform=mac';
+    });
   }
   var hero = document.querySelector('.hero');
   if (hero && 'IntersectionObserver' in window) {
